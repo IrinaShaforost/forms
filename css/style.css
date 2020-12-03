@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto:wght@300&display=swap");
+.background {
+  display: block;
+  background: -webkit-gradient(linear, left top, right top, from(#190d71), to(#770583));
+  background: linear-gradient(90deg, #190d71 0%, #770583 100%);
+  padding: 40px 0 200px;
+}
+
+.logo {
+  margin-bottom: 50px;
+}
+
+.logo a {
+  text-align: center;
+}
+
+.logo a img {
+  display: block;
+  width: 100%;
+}
+
+form .form-control {
+  padding: 25px 20px;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  background: transparent;
+  color: #cfcece;
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+form .form-control:focus {
+  color: #cfcece;
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 16px;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #efefef;
+  outline: none;
+}
+
+.mail {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.mail span {
+  position: absolute;
+  top: 13px;
+  right: 25px;
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+}
+
+.mail span img {
+  width: 100%;
+}
+
+.password {
+  position: relative;
+}
+
+.password-control {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+  background: url(../images/eye.png) 0 0 no-repeat;
+  background-size: contain;
+}
+
+.password-control.view {
+  background: url(../images/eye-2.png) 0 0 no-repeat;
+  background-size: contain;
+}
+
+.form_link {
+  display: block;
+  text-align: center;
+}
+
+.form_link a {
+  color: #cfcece;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 20px;
+  outline: none;
+  text-decoration: none;
+  display: block;
+  margin: 45px 0;
+}
+
+.form_link .number_link {
+  color: #ffffff;
+}
+
+.form_link .number_link span {
+  color: #990eb3;
+}
+
+.btn {
+  padding: 20px 47px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 0 15px;
+  color: #400a79;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.btn.btn-primary {
+  background: #d4d2ff;
+  -webkit-box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.25);
+}
+
+.btn.btn-primary:hover {
+  background: #d4d2ff;
+  color: #400a79;
+  -webkit-box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.25);
+}
+
+.btn.btn-primary:not(:disabled):not(.disabled):active {
+  background: #d4d2ff;
+  color: #400a79;
+  border: none;
+}
+
+.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 768px) {
+  .background {
+    padding: 80px 0 200px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .btn {
+    font-size: 25px;
+  }
+  .form_link a {
+    font-size: 22px;
+  }
+  .background {
+    padding: 100px 0 200px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

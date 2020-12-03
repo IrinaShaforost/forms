@@ -1,0 +1,129 @@
+@mixin font-color($c, $ff, $fs, $fw, $lh) {
+	color: $c;
+	font-family: $ff;
+	font-size: $fs;
+	font-weight: $fw;
+	line-height: $lh;
+}
+.background {
+	display: block;
+	background: linear-gradient(90deg, #190d71 0%, #770583 100%);
+	padding: 40px 0 200px;
+}
+.logo {
+	margin-bottom: 50px;
+	& a {
+		text-align: center;
+		& img {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+form {
+	& .form-control {
+		padding: 25px 20px;
+		border: 1px solid #efefef;
+		border-radius: 5px;
+		background: transparent;
+		@include font-color(#cfcece, "Roboto", 25px, 300, 16px);
+		&:focus {
+			@include font-color(#cfcece, "Roboto", 25px, 300, 16px);
+			background-color: transparent;
+			box-shadow: none;
+			border: 1px solid #efefef;
+			outline: none;
+		}
+	}
+}
+.mail {
+	margin-bottom: 30px;
+	position: relative;
+	& span {
+		position: absolute;
+		top: 13px;
+		right: 25px;
+		display: inline-block;
+		width: 30px;
+		height: 10px;
+		& img {
+			width: 100%;
+		}
+	}
+}
+.password {
+	position: relative;
+}
+.password-control {
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	display: inline-block;
+	width: 30px;
+	height: 10px;
+	background: url(../images/eye.png) 0 0 no-repeat;
+	background-size: contain;
+}
+.password-control.view {
+	background: url(../images/eye-2.png) 0 0 no-repeat;
+	background-size: contain;
+}
+.form_link {
+	display: block;
+	text-align: center;
+	& a {
+		@include font-color(#cfcece, "Roboto", 20px, 300, 20px);
+		outline: none;
+		text-decoration: none;
+		display: block;
+		margin: 45px 0;
+	}
+	.number_link {
+		color: #ffffff;
+		& span {
+			color: #990eb3;
+		}
+	}
+}
+.btn {
+	padding: 20px 47px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	margin: 0 15px;
+	@include font-color(#400a79, "Roboto", 20px, 300, 20px);
+
+	&.btn-primary {
+		background: #d4d2ff;
+		box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.25);
+		&:hover {
+			background: #d4d2ff;
+			color: #400a79;
+			box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.25);
+		}
+		&:not(:disabled):not(.disabled):active {
+			background: #d4d2ff;
+			color: #400a79;
+			border: none;
+			&:focus {
+				box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.25);
+			}
+		}
+	}
+}
+@media only screen and (max-width: 768px) {
+	.background {
+		padding: 80px 0 200px;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.btn {
+		font-size: 25px;
+	}
+	.form_link a {
+		font-size: 22px;
+	}
+	.background {
+		padding: 100px 0 200px;
+	}
+}
