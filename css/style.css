@@ -249,4 +249,259 @@ form .form-control:focus {
     margin-top: 81px;
   }
 }
+
+.registration_personal .logo {
+  width: 258px;
+  height: 169px;
+}
+
+.registration_personal p {
+  color: #ffffff;
+  font-family: "Philosopher";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 90px;
+}
+
+.registration_personal form .form-group {
+  width: 60%;
+}
+
+.registration_personal form label {
+  color: #bdbdbd;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-bottom: 0px;
+}
+
+.registration_personal form .form-control {
+  font-size: 18px;
+  padding: 25px 38px;
+}
+
+.registration_personal form p {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 60px 0 70px;
+}
+
+.registration_personal form button {
+  margin-top: 50px;
+}
+
+.registration_personal form button.btn {
+  padding: 21px 125px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(../images/calendar_arrow.png) no-repeat;
+  background-size: contain;
+  width: 7px;
+  height: 7px;
+  border-width: thin;
+}
+
+.form_chek span img {
+  width: 28px;
+  height: 33px;
+  position: relative;
+  left: 10px;
+  bottom: 3px;
+}
+
+.form-group.checkbox {
+  position: relative;
+}
+
+.form-group.checkbox:before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  left: 25px;
+  margin: auto 0;
+  width: 21px;
+  height: 18px;
+}
+
+.form-group.checkbox.exampleInputPhone:before {
+  content: "";
+  display: block;
+  background: url("../images/phone.png") no-repeat;
+  background-size: cover;
+}
+
+.form-group.checkbox.exampleInputE-mail:before {
+  content: "";
+  display: block;
+  background: url("../images/e-mail.png") no-repeat;
+  background-size: cover;
+}
+
+.form-group.checkbox.exampleInputWebsite:before {
+  content: "";
+  display: block;
+  background: url("../images/website.png") no-repeat;
+  background-size: cover;
+  width: 18px;
+  height: 18px;
+}
+
+.form-group.checkbox.exampleInputFacebook:before {
+  content: "";
+  display: block;
+  background: url("../images/facebuck.png") no-repeat;
+  background-size: cover;
+  width: 19px;
+  height: 19px;
+}
+
+.form-group.checkbox.exampleInputInstagram:before {
+  content: "";
+  display: block;
+  background: url("../images/instagram.png") no-repeat;
+  background-size: cover;
+  width: 19px;
+  height: 19px;
+}
+
+.form-group.checkbox.exampleInputTelegram:before {
+  content: "";
+  display: block;
+  background: url("../images/telegram.png") no-repeat;
+  background-size: cover;
+  width: 19px;
+  height: 19px;
+}
+
+.form-group.checkbox.exampleInputWhatsapp:before {
+  content: "";
+  display: block;
+  background: url("../images/whatsapp.png") no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+.form-group.checkbox.exampleInputVK:before {
+  content: "";
+  display: block;
+  background: url("../images/vk.png") no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 19px;
+}
+
+.form-group.checkbox.exampleInputTikTok:before {
+  content: "";
+  display: block;
+  background: url("../images/tiktok.png") no-repeat;
+  background-size: cover;
+  width: 14px;
+  height: 17px;
+  top: 32px;
+}
+
+.form-group.checkbox.exampleInputLinkedin:before {
+  content: "";
+  display: block;
+  background: url("../images/likeding.png") no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+.form-group.checkbox.exampleInputYoutube:before {
+  content: "";
+  display: block;
+  background: url("../images/youtube.png") no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+.form-group.checkbox.exampleInputSkype:before {
+  content: "";
+  display: block;
+  background: url("../images/youtube.png") no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+.form-group.checkbox.exampleInputSkype:before {
+  content: "";
+  display: block;
+  background: url("../images/youtube.png") no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+form .checkbox input:invalid + span:after {
+  content: "";
+  background: url(../images/chek1.png) no-repeat;
+  display: block;
+  background-size: cover;
+  position: absolute;
+  top: 41px;
+  bottom: 0;
+  right: -40px;
+  margin: auto 0;
+  width: 29px;
+  height: 27px;
+}
+
+form .checkbox input:valid + span:after {
+  content: "";
+  background: url(../images/chek2.png) no-repeat;
+  display: block;
+  background-size: cover;
+  position: absolute;
+  top: 41px;
+  bottom: 0;
+  right: -40px;
+  margin: auto 0;
+  width: 29px;
+  height: 27px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .registration_personal form .form-control {
+    padding: 27px 43px;
+  }
+  .registration_personal form .form-group {
+    width: 90%;
+  }
+  .form-group.checkbox:before {
+    left: 15px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .registration_personal form p {
+    font-size: 25px;
+  }
+  .registration_personal form .form-group {
+    width: 80%;
+  }
+  .registration_personal form button.btn {
+    padding: 21px 112px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  form .checkbox input:invalid + span:after {
+    right: -33px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
