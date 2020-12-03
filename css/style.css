@@ -80,6 +80,8 @@ form .form-control:focus {
 .password-control.view {
   background: url(../images/eye-2.png) 0 0 no-repeat;
   background-size: contain;
+  width: 32px;
+  height: 12px;
 }
 
 .form_link {
@@ -133,6 +135,12 @@ form .form-control:focus {
           box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.25);
 }
 
+.btn.btn-primary:focus {
+  background: #d4d2ff;
+  color: #400a79;
+  border: none;
+}
+
 .btn.btn-primary:not(:disabled):not(.disabled):active {
   background: #d4d2ff;
   color: #400a79;
@@ -159,6 +167,69 @@ form .form-control:focus {
   }
   .background {
     padding: 100px 0 200px;
+  }
+}
+
+.create_account .background {
+  padding: 60px 0 100px;
+}
+
+.create_account h3 {
+  color: #ffffff;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Philosopher";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 90px;
+}
+
+.create_account .create_account_variaty .btn {
+  padding: 20px 100px;
+}
+
+.create_account p {
+  margin-top: 120px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-bottom: 60px;
+}
+
+.create_account .create_account_code {
+  width: 300px;
+}
+
+@media only screen and (max-width: 420px) {
+  .create_account .create_account_variaty .btn {
+    padding: 18px 30px;
+    font-size: 22px;
+  }
+  .create_account h3 {
+    font-size: 23px;
+  }
+  .create_account p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .create_account p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .create_account .create_account_variaty .btn {
+    padding: 18px 23px;
+    font-size: 20px;
+  }
+  .create_account p {
+    font-size: 15px;
+    margin-top: 81px;
   }
 }
 /*# sourceMappingURL=style.css.map */
