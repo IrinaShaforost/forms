@@ -30,6 +30,23 @@
 		width: 300px;
 	}
 }
+@media only screen and (max-width: 736px) {
+	.create_account .create_account_variaty .btn {
+		padding: 18px 60px;
+		font-size: 27px;
+	}
+}
+@media only screen and (max-width: 568px) {
+	.create_account .create_account_variaty .btn {
+		padding: 18px 70px;
+		font-size: 27px;
+	}
+	.create_account {
+		h3 {
+			font-size: 29px;
+		}
+	}
+}
 @media only screen and (max-width: 420px) {
 	.create_account .create_account_variaty .btn {
 		padding: 18px 30px;
@@ -40,7 +57,7 @@
 			font-size: 23px;
 		}
 		p {
-			font-size: 18px;
+			font-size: 17px;
 		}
 	}
 }
