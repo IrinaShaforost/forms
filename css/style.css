@@ -640,6 +640,7 @@ textarea.form-control {
 .account_people .account_background .logo {
   position: relative;
   bottom: 20px;
+  right: 120px;
 }
 
 .account_people .account_background .logo img {
@@ -766,6 +767,9 @@ textarea.form-control {
 }
 
 @media only screen and (max-width: 768px) {
+  .account_people .account_background .logo {
+    right: 40px;
+  }
   .account_information {
     margin-top: 240px;
   }
@@ -790,6 +794,9 @@ textarea.form-control {
 }
 
 @media only screen and (max-width: 420px) {
+  account_people .account_background .logo {
+    right: 0px;
+  }
   .account_people .account_background .logo img {
     position: absolute;
     width: 87px;
