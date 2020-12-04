@@ -279,7 +279,6 @@ form .form-control:focus {
 
 .registration_personal form .form-control {
   font-size: 18px;
-  padding: 25px 38px;
 }
 
 .registration_personal form p {
@@ -297,6 +296,18 @@ form .form-control:focus {
 
 .registration_personal form button.btn {
   padding: 21px 125px;
+}
+
+.registration_personal form .check {
+  width: 100%;
+}
+
+.registration_personal form .form-control.input-control {
+  padding: 27px 19px;
+}
+
+.registration_personal .check .checkbox .form-control {
+  padding: 25px 25px 25px 45px;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -327,7 +338,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
   top: 30px;
   bottom: 0;
-  left: 25px;
+  left: 13px;
   margin: auto 0;
   width: 21px;
   height: 18px;
@@ -487,12 +498,23 @@ form .checkbox input:valid + span:after {
   }
 }
 
+@media only screen and (max-width: 540px) {
+  .registration_personal form .check .form-group {
+    position: relative;
+    left: -15px;
+    width: 85%;
+  }
+}
+
 @media only screen and (max-width: 420px) {
   .registration_personal form p {
     font-size: 25px;
   }
   .registration_personal form .form-group {
-    width: 80%;
+    width: 95%;
+  }
+  .registration_personal form .check .form-group {
+    width: 87%;
   }
   .registration_personal form button.btn {
     padding: 21px 112px;
@@ -502,6 +524,93 @@ form .checkbox input:valid + span:after {
 @media only screen and (max-width: 360px) {
   form .checkbox input:invalid + span:after {
     right: -33px;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+textarea.form-control {
+  height: 200px;
+}
+
+.form-group select.form-control {
+  color: black;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.custom-select {
+  background-color: transparent;
+  background: url(../images/calendar_arrow.png) no-repeat right 0.75rem center/8px 10px;
+  color: #bdbdbd;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.custom-select:focus {
+  color: #bdbdbd;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 32px;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #efefef;
+  outline: none;
+}
+
+.custom-select option {
+  background-color: white;
+  color: black;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 32px;
+  padding: 15px 30px;
+}
+
+.information {
+  width: 60%;
+  position: relative;
+}
+
+.information .form-group.city {
+  position: absolute;
+  left: 0;
+  width: 48%;
+  margin-right: 15px;
+}
+
+.information .form-group.country {
+  position: relative;
+  right: 0;
+  width: 48%;
+  margin-left: 52%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .information {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .information {
+    width: 95%;
+  }
+  .information .form-group.city {
+    width: 47%;
+  }
+  .information .form-group.country {
+    width: 47%;
+    margin-left: 52%;
   }
 }
 /*# sourceMappingURL=style.css.map */

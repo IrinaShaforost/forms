@@ -1,0 +1,59 @@
+textarea {
+	resize: none;
+	&.form-control {
+		height: 200px;
+	}
+}
+.form-group select.form-control {
+	@include font-color(black, "Roboto", 14px, 300, 32px);
+}
+.custom-select {
+	background-color: transparent;
+	background: url(../images/calendar_arrow.png) no-repeat right 0.75rem center/8px 10px;
+	@include font-color(#bdbdbd, "Roboto", 14px, 300, 32px);
+	&:focus {
+		@include font-color(#bdbdbd, "Roboto", 14px, 300, 32px);
+		background-color: transparent;
+		box-shadow: none;
+		border: 1px solid #efefef;
+		outline: none;
+	}
+	& option {
+		background-color: white;
+		@include font-color(black, "Roboto", 14px, 300, 32px);
+		padding: 15px 30px;
+	}
+}
+.information {
+	width: 60%;
+	position: relative;
+	& .form-group.city {
+		position: absolute;
+		left: 0;
+		width: 48%;
+		margin-right: 15px;
+	}
+	& .form-group.country {
+		position: relative;
+		right: 0;
+		width: 48%;
+		margin-left: 52%;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.information {
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.information {
+		width: 95%;
+		.form-group.city {
+			width: 47%;
+		}
+		.form-group.country {
+			width: 47%;
+			margin-left: 52%;
+		}
+	}
+}

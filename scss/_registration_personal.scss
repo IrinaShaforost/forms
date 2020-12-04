@@ -24,7 +24,6 @@
 		}
 		.form-control {
 			font-size: 18px;
-			padding: 25px 38px;
 		}
 		p {
 			@include font-color(#ffffff, "Roboto", 31px, 400, 40px);
@@ -36,6 +35,15 @@
 				padding: 21px 125px;
 			}
 		}
+		.check {
+			width: 100%;
+		}
+	}
+	form .form-control.input-control {
+		padding: 27px 19px;
+	}
+	.check .checkbox .form-control {
+		padding: 25px 25px 25px 45px;
 	}
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -62,7 +70,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 		position: absolute;
 		top: 30px;
 		bottom: 0;
-		left: 25px;
+		left: 13px;
 		margin: auto 0;
 		width: 21px;
 		height: 18px;
@@ -210,12 +218,22 @@ form .checkbox {
 		left: 15px;
 	}
 }
+@media only screen and (max-width: 540px) {
+	.registration_personal form .check .form-group {
+		position: relative;
+		left: -15px;
+		width: 85%;
+	}
+}
 @media only screen and (max-width: 420px) {
 	.registration_personal form p {
 		font-size: 25px;
 	}
 	.registration_personal form .form-group {
-		width: 80%;
+		width: 95%;
+	}
+	.registration_personal form .check .form-group {
+		width: 87%;
 	}
 	.registration_personal form button.btn {
 		padding: 21px 112px;
