@@ -838,6 +838,9 @@ textarea.form-control {
     position: relative;
     bottom: 0px;
   }
+  .account_people .account_background .logo {
+    right: -25px;
+  }
 }
 
 .checkout {
@@ -1012,8 +1015,9 @@ textarea.form-control {
             justify-content: center;
   }
   .checkout .checkout_content .price {
-    top: -28px;
-    left: 141px;
+    top: -32px;
+    left: 0px;
+    margin-left: 150px;
   }
   .total {
     margin: 0 0 0 0;
@@ -1024,9 +1028,6 @@ textarea.form-control {
   }
   .checkout h2 {
     margin-bottom: 60px;
-  }
-  .checkout {
-    margin: 100px auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
