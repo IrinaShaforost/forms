@@ -841,14 +841,192 @@ textarea.form-control {
 }
 
 .checkout {
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .checkout h2 {
   color: #000000;
   font-family: "Quicksand";
-  font-size: 25px;
+  font-size: 45px;
   font-weight: 500;
   line-height: 27px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.checkout .checkout_content {
+  background: #e3e1e8;
+  -webkit-box-shadow: 0px 8px 23px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 23px rgba(0, 0, 0, 0.2);
+  padding: 50px 70px;
+  margin-bottom: 20px;
+}
+
+.checkout .checkout_content lobbox_pay img {
+  width: 100%;
+  display: block;
+}
+
+.checkout .checkout_content .checkout_content_pay {
+  max-width: 340px;
+}
+
+.checkout .checkout_content .checkout_content_pay img {
+  display: block;
+  width: 100%;
+}
+
+.checkout .checkout_content .chip {
+  margin-left: 50px;
+}
+
+.checkout .checkout_content .chip h4,
+.checkout .checkout_content .chip p {
+  color: #000000;
+  font-family: "Quicksand";
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.checkout .checkout_content .chip p {
+  color: #929292;
+  font-size: 20px;
+}
+
+.checkout .checkout_content #num {
+  width: 50px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  font-family: "Quicksand";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.checkout .checkout_content .product-minus,
+.checkout .checkout_content .product-plus {
+  color: #000000;
+  font-family: "Quicksand";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 22px;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: white;
+  border: transparent;
+}
+
+.checkout .checkout_content .out-price,
+.checkout .checkout_content .price {
+  color: #000000;
+  font-family: "Quicksand";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.checkout .checkout_content .price {
+  position: relative;
+  top: 118px;
+}
+
+.product-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20px;
+}
+
+.product-minus {
+  cursor: pointer;
+  padding: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.product-plus {
+  cursor: pointer;
+  padding: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.total {
+  margin: 0 0 0 auto;
+  background: #61077f;
+  -webkit-box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 8px 75px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+@media only screen and (max-width: 768px) {
+  .checkout .checkout_content {
+    padding: 37px 8px;
+  }
+  .checkout .checkout_content .chip h4,
+  .checkout .checkout_content .chip p {
+    font-size: 31px;
+  }
+  .checkout .checkout_content .chip h4 .checkout .checkout_content .chip,
+  .checkout .checkout_content .chip p .checkout .checkout_content .chip {
+    margin-left: 29px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .checkout_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .checkout .checkout_content {
+    padding: 9px 9px;
+  }
+  .checkout .checkout_content .chip {
+    margin-left: 0px;
+  }
+  .chip {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .checkout .checkout_content .price {
+    top: -28px;
+    left: 141px;
+  }
+  .total {
+    margin: 0 0 0 0;
+    text-align: center;
+  }
+  .checkout {
+    margin-top: 100px;
+  }
+  .checkout h2 {
+    margin-bottom: 60px;
+  }
+  .checkout {
+    margin: 100px auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

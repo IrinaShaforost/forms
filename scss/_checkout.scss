@@ -1,6 +1,128 @@
 .checkout {
-	padding-top: 50px;
+	margin-top: 50px;
 	h2 {
-		@include font-color(#000000, "Quicksand", 25px, 500, 27px);
+		@include font-color(#000000, "Quicksand", 45px, 500, 27px);
+		margin-bottom: 20px;
+		margin-left: 40px;
+	}
+	.checkout_content {
+		background: #e3e1e8;
+		box-shadow: 0px 8px 23px rgba(0, 0, 0, 0.2);
+		padding: 50px 70px;
+		margin-bottom: 20px;
+		lobbox_pay img {
+			width: 100%;
+			display: block;
+		}
+		.checkout_content_pay {
+			max-width: 340px;
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+		.chip {
+			margin-left: 50px;
+			h4,
+			p {
+				@include font-color(#000000, "Quicksand", 35px, 500, 35px);
+			}
+			p {
+				color: #929292;
+				font-size: 20px;
+			}
+		}
+		#num {
+			width: 50px;
+			text-align: center;
+			background-color: transparent;
+			border: none;
+			@include font-color(#000000, "Quicksand", 32px, 500, 32px);
+		}
+		.product-minus,
+		.product-plus {
+			@include font-color(#000000, "Quicksand", 32px, 500, 22px);
+			border: 1px solid;
+			border-radius: 50%;
+			width: 44px;
+			height: 44px;
+			background-color: white;
+			border: transparent;
+		}
+		.out-price,
+		.price {
+			@include font-color(#000000, "Quicksand", 32px, 500, 22px);
+		}
+		.price {
+			position: relative;
+			top: 118px;
+		}
+	}
+}
+.product-numbers {
+	display: flex;
+	width: 20px;
+}
+.product-minus {
+	cursor: pointer;
+	padding: 10px;
+	width: max-content;
+}
+.product-plus {
+	cursor: pointer;
+	padding: 10px;
+	width: max-content;
+}
+.total {
+	margin: 0 0 0 auto;
+	background: #61077f;
+	box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	padding: 8px 75px;
+	@include font-color(#ffffff, "Roboto", 18px, 500, 22px);
+}
+@media only screen and (max-width: 768px) {
+	.checkout .checkout_content {
+		padding: 37px 8px;
+	}
+	.checkout .checkout_content .chip h4,
+	.checkout .checkout_content .chip p {
+		font-size: 31px;
+		.checkout .checkout_content .chip {
+			margin-left: 29px;
+		}
+	}
+}
+@media only screen and (max-width: 420px) {
+	.checkout_content {
+		flex-direction: column;
+	}
+	.checkout .checkout_content {
+		padding: 9px 9px;
+	}
+	.checkout .checkout_content .chip {
+		margin-left: 0px;
+	}
+	.chip {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.checkout .checkout_content .price {
+		top: -28px;
+		left: 141px;
+	}
+	.total {
+		margin: 0 0 0 0;
+		text-align: center;
+	}
+	.checkout {
+		margin-top: 100px;
+	}
+	.checkout h2 {
+		margin-bottom: 60px;
+	}
+	.checkout {
+		margin: 100px auto;
 	}
 }
