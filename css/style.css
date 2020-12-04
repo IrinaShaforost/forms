@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&family=Quicksand:wght@400;500&family=Roboto:ital,wght@0,400;1,300&display=swap");
 .background {
   display: block;
   background: -webkit-gradient(linear, left top, right top, from(#190d71), to(#770583));
@@ -612,5 +612,228 @@ textarea.form-control {
     width: 47%;
     margin-left: 53%;
   }
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.account_people .background {
+  padding: 0;
+}
+
+.account_people .account_background {
+  background: url(../images/account_background.png) no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+.account_people .account_background .account_code {
+  width: 80px;
+}
+
+.account_people .account_background .account_code img {
+  width: 100%;
+}
+
+.account_people .account_background .logo {
+  position: relative;
+  bottom: 20px;
+}
+
+.account_people .account_background .logo img {
+  width: 100%;
+}
+
+.account_information {
+  margin-top: 350px;
+  margin-bottom: 80px;
+}
+
+.account_information .row {
+  position: relative;
+}
+
+.account_information h2 {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 32px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ffffff;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.account_information p {
+  color: #a2a2a2;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.account_information p.account_manager {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.account_information p.account_manager span {
+  font-size: 20px;
+}
+
+.account_information p.discription {
+  color: #990cb0;
+  font-family: "Roboto";
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 50px;
+}
+
+.account_information .account_image {
+  width: 400px;
+  position: absolute;
+  top: -256px;
+  right: 80px;
+}
+
+.account_information .account_image img {
+  width: 100%;
+}
+
+.account_social-icon {
+  margin-bottom: 150px;
+}
+
+.account_social-icon .link {
+  margin-bottom: 50px;
+}
+
+.account_social-icon .link a img {
+  width: 100px;
+}
+
+.account_personal {
+  padding-bottom: 100px;
+}
+
+.account_personal img {
+  width: 100%;
+}
+
+.account_personal .img {
+  position: relative;
+}
+
+.account_personal .img:hover {
+  position: relative;
+  bottom: 40px;
+}
+
+.account_personal .img:hover:after {
+  content: "";
+  display: block;
+  background: url(../images/User.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: -7px;
+  bottom: 0;
+  left: 24%;
+  margin: auto 0;
+  width: 48%;
+  height: 70%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .row {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .account_information {
+    margin-top: 240px;
+  }
+  .account_people .account_background {
+    background-size: contain;
+  }
+  .account_information .account_image {
+    width: 340px;
+    position: absolute;
+    top: -261px;
+    right: 4px;
+  }
+  .account_social-icon {
+    margin-bottom: 93px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .account_information .account_image {
+    width: 283px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .account_people .account_background .logo img {
+    position: absolute;
+    width: 87px;
+    right: 20px;
+    top: 7px;
+  }
+  .account_people .account_background .account_code img {
+    position: absolute;
+    width: 42px;
+  }
+  .account_people .account_background {
+    padding-top: 25px;
+  }
+  .account_information {
+    margin-bottom: 45px;
+  }
+  .account_information .account_image {
+    width: 215px;
+    position: absolute;
+    margin-top: 73px;
+    right: -15px;
+  }
+  .account_information .accoun_information_text {
+    margin-top: 50px;
+  }
+  .account_information h2 {
+    font-size: 42px;
+  }
+  .account_information p.discription {
+    font-size: 40px;
+  }
+  .link {
+    width: 50%;
+  }
+  .account_social-icon {
+    margin-bottom: 0px;
+  }
+  .account_personal .img:hover {
+    position: relative;
+    bottom: 0px;
+  }
+}
+
+.checkout {
+  padding-top: 50px;
+}
+
+.checkout h2 {
+  color: #000000;
+  font-family: "Quicksand";
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 27px;
 }
 /*# sourceMappingURL=style.css.map */

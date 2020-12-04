@@ -1,0 +1,6 @@
+.checkout {
+	padding-top: 50px;
+	h2 {
+		@include font-color(#000000, "Quicksand", 25px, 500, 27px);
+	}
+}
