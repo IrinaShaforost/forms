@@ -17,20 +17,20 @@
 				<h2>Your order</h2>
 				<section class="checkout_content d-flex">
 					<div class="checkout_content_pay"><img src="images/lobbox.png"></div>
-					<div class="chip">
+					<div class="goods chip">
 						<h4>Chip with our logo</h4>
 						<p>Vendor code: ChipT </p>
-						<div class="product-numbers">
-							<div class="product-minus">-</div>
-							<input type="text" class="num" id="num" value="1" />
-							<div class="product-plus">+</div>
+						<div class="goods-count">
+							<span class="amount product-numbers">
+								<span class="down product-minus">-</span>
+								<input type="text" id="num" class="counter" value="1" data-price="5" data-count="1" />
+								<span class="up product-plus">+</span>
+							</span>
+							<div class="price"><span class="price-one">5</span>€</div>
 						</div>
+						<div class="total goods-price">Total:<span class="sum"></span></div>
 					</div>
-					<div class="price"><span class="price-one">5</span>€</div>
 				</section>
-				<div class="total">
-					Total:<span class="out-price"></span>
-				</div>
 
 			</div>
 		</div>
@@ -40,20 +40,20 @@
 			<div class="row flex-column justify-content-center">
 				<section class="checkout_content d-flex">
 					<div class="checkout_content_pay"><img src="images/bitcoin.png"></div>
-					<div class="chip">
+					<div class="goods chip">
 						<h4>Chip with our logo</h4>
 						<p>Vendor code: ChipT </p>
-						<div class="product-numbers">
-							<div class="product-minus">-</div>
-							<input type="text" class="num" id="num" value="1" />
-							<div class="product-plus">+</div>
+						<div class="goods-count">
+							<span class="amount product-numbers">
+								<span class="down product-minus">-</span>
+								<input type="text" id="num" class="counter" value="1" data-price="5" data-count="1" />
+								<span class="up product-plus">+</span>
+							</span>
+							<div class="price"><span class="price-one">5</span>€</div>
 						</div>
+						<div class="total goods-price">Total:<span class="sum"></span></div>
 					</div>
-					<div class="price"><span class="price-one">5</span>€</div>
 				</section>
-				<div class="total">
-					Total:<span class="out-price"></span>
-				</div>
 
 			</div>
 		</div>
@@ -63,20 +63,20 @@
 			<div class="row flex-column justify-content-center">
 				<section class="checkout_content d-flex">
 					<div class="checkout_content_pay"><img src="images/stripe.png"></div>
-					<div class="chip">
+					<div class="goods chip">
 						<h4>Chip with our logo</h4>
 						<p>Vendor code: ChipT </p>
-						<div class="product-numbers">
-							<div class="product-minus">-</div>
-							<input type="text" class="num" id="num" value="1" />
-							<div class="product-plus">+</div>
+						<div class="goods-count">
+							<span class="amount product-numbers">
+								<span class="down product-minus">-</span>
+								<input type="text" id="num" class="counter" value="1" data-price="5" data-count="1" />
+								<span class="up product-plus">+</span>
+							</span>
+							<div class="price"><span class="price-one">5</span>€</div>
 						</div>
+						<div class="total goods-price">Total:<span class="sum"></span></div>
 					</div>
-					<div class="price"><span class="price-one">5</span>€</div>
 				</section>
-				<div class="total">
-					Total:<span class="out-price"></span>
-				</div>
 
 			</div>
 		</div>
@@ -86,24 +86,25 @@
 			<div class="row flex-column justify-content-center">
 				<section class="checkout_content d-flex">
 					<div class="checkout_content_pay"><img src="images/paypal.svg"></div>
-					<div class="chip">
+					<div class="goods chip">
 						<h4>Chip with our logo</h4>
 						<p>Vendor code: ChipT </p>
-						<div class="product-numbers">
-							<div class="product-minus">-</div>
-							<input type="text" class="num" id="num" value="1" />
-							<div class="product-plus">+</div>
+						<div class="goods-count">
+							<span class="amount product-numbers">
+								<span class="down product-minus">-</span>
+								<input type="text" id="num" class="counter" value="1" data-price="5" data-count="1" />
+								<span class="up product-plus">+</span>
+							</span>
+							<div class="price"><span class="price-one">5</span>€</div>
 						</div>
+						<div class="total goods-price">Total:<span class="sum"></span></div>
 					</div>
-					<div class="price"><span class="price-one">5</span>€</div>
 				</section>
-				<div class="total">
-					Total:<span class="out-price"></span>
-				</div>
-
 			</div>
+
 		</div>
 	</section>
+	<div class="check_but"><button type="submit" class="btn btn-primary mb-2 col-md-10">Order</button></div>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>

@@ -8,39 +8,23 @@ $('body').on('click', '.password-control', function () {
 	}
 	return false;
 });
-let price = document.querySelector('.price-one').textContent; // или просто задать price числом
-console.log(price)
-let num = document.querySelector('#num').value;
+$(document).ready(function () {
+	$('.goods').on('click', function (evt) {
+		var elem = evt.target;
+		var container = evt.currentTarget;
+		var input = container.getElementsByClassName('counter')[0];
+		var sum = container.getElementsByClassName('sum')[0];
+		var count = parseInt(input.getAttribute('data-count'), 10);
+		var price = parseInt(input.getAttribute('data-price'), 10);
 
-let calcPrice = () => {
-	return price * num;
-}
-
-let start = () => {
-	num = 1
-	document.querySelector('#num').value = num;
-	document.querySelector('.out-price').innerHTML = calcPrice();
-}
-start();
-
-let change = () => {
-	num = document.querySelector('#num').value;
-	document.querySelector('.out-price').innerHTML = calcPrice();
-}
-
-let plus = () => {
-	num++;
-	document.querySelector('#num').value = num;
-	document.querySelector('.out-price').innerHTML = calcPrice();
-}
-let minus = () => {
-	if (num != 0) {
-		num--;
-		document.querySelector('#num').value = num;
-		document.querySelector('.out-price').innerHTML = calcPrice();
-	}
-}
-
-document.querySelector('.product-plus').addEventListener('click', plus);
-document.querySelector('.product-minus').addEventListener('click', minus);
-document.querySelector('#num').addEventListener('change', change);
+		if (elem.classList.contains('down')) {
+			count = count == 1 ? count : (count - 1);
+		} else if (elem.classList.contains('up')) {
+			count += 1;
+		}
+		console.log(count)
+		input.value = count + '';
+		sum.innerHTML = price * count;
+		input.setAttribute('data-count', count);
+	});
+});

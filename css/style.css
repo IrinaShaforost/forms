@@ -844,7 +844,9 @@ textarea.form-control {
 }
 
 .checkout {
+  margin-bottom: 200px;
   margin-top: 50px;
+  position: relative;
 }
 
 .checkout h2 {
@@ -935,7 +937,29 @@ textarea.form-control {
 
 .checkout .checkout_content .price {
   position: relative;
-  top: 118px;
+  top: -33px;
+  margin-left: 200px;
+}
+
+.check_but {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.check_but .btn.btn-primary {
+  background: #61077f;
+  -webkit-box-shadow: 6px 8px 12px rgba(10, 10, 10, 0.25);
+          box-shadow: 6px 8px 12px rgba(10, 10, 10, 0.25);
+  border-radius: 56.1398px;
+}
+
+.check_but .btn {
+  width: 34%;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
 }
 
 .product-numbers {
@@ -943,6 +967,14 @@ textarea.form-control {
   display: -ms-flexbox;
   display: flex;
   width: 20px;
+}
+
+.product-numbers input:active,
+.product-numbers input:hover,
+.product-numbers input:focus {
+  border: none;
+  outline: none;
+  outline-offset: 0;
 }
 
 .product-minus {
@@ -973,19 +1005,72 @@ textarea.form-control {
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
+  position: absolute;
+  left: 76%;
+  bottom: -47px;
+  width: 200px;
+}
+
+.total.total1 {
+  bottom: -43px;
+}
+
+.total span {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+@media only screen and (max-width: 812px) {
+  .total {
+    left: 72%;
+  }
+  .checkout .checkout_content .chip h4 {
+    font-size: 28px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .total {
+    left: 70%;
+  }
   .checkout .checkout_content {
     padding: 37px 8px;
   }
-  .checkout .checkout_content .chip h4,
-  .checkout .checkout_content .chip p {
+  .checkout .checkout_content .chip h4 {
     font-size: 31px;
   }
-  .checkout .checkout_content .chip h4 .checkout .checkout_content .chip,
-  .checkout .checkout_content .chip p .checkout .checkout_content .chip {
+  .checkout .checkout_content .chip h4 .checkout .checkout_content .chip {
     margin-left: 29px;
+  }
+  .checkout .checkout_content .chip h4 .checkout .checkout_content .chip p {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .total {
+    left: 69%;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .total {
+    left: 65%;
+  }
+  .checkout h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .total {
+    left: 60%;
+  }
+  .check_but .btn {
+    width: 80%;
   }
 }
 
@@ -997,7 +1082,7 @@ textarea.form-control {
             flex-direction: column;
   }
   .checkout .checkout_content {
-    padding: 9px 9px;
+    padding: 35px 9px;
   }
   .checkout .checkout_content .chip {
     margin-left: 0px;
@@ -1013,6 +1098,9 @@ textarea.form-control {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .checkout .checkout_content .price {
     top: -32px;
@@ -1020,14 +1108,23 @@ textarea.form-control {
     margin-left: 150px;
   }
   .total {
-    margin: 0 0 0 0;
-    text-align: center;
+    left: 20%;
   }
   .checkout {
-    margin-top: 100px;
+    margin-top: 70px;
   }
   .checkout h2 {
     margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .checkout h2 {
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+  .checkout {
+    margin-bottom: 170px;
   }
 }
 /*# sourceMappingURL=style.css.map */
